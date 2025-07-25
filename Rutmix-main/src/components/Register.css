@@ -1,0 +1,89 @@
+.form-container {
+  padding: 30px 70px;
+  margin: 60px auto 0px;
+  padding-bottom: 30px;
+  background: #2d2d2d;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0);
+  padding: 2rem;
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.glassmorph {
+  background: rgba(255, 255, 255, 0.041);
+  margin: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.212);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.342);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #9098a7;
+  font-size: 1.1vw;
+  translate: -15px;
+}
+
+.form-container input {
+  width: 300px;
+  height: 45px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  color: #94a3ba;
+}
+
+.form-container input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #2563eb;
+}
+
+.yellow-glassmorph {
+  background: rgba(250, 226, 8, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 226, 8, 0.4);
+  box-shadow: 0 4px 40px 2px rgba(250, 226, 8, 0.158);
+  border-radius: 16px;
+  padding: 1.5rem;
+}

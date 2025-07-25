@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+body {
+  background: #1E1E1E;
+  color: rgb(255, 255, 255);
+}
+
+.audio::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: #10b981;
+  border: 2px solid white;
+  border-radius: 9999px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  margin-top: -6px;
+  position: relative;
+  z-index: 2;
+}
+
+::-webkit-slider-runnable-track {
+  height: 11px;
+  background: transparent;
+  border-radius: 9999px;
+}
+
+.sound::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #10b981;
+  border: 2px solid white;
+  border-radius: 9999px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  margin-top: -6px;
+  position: relative;
+  z-index: 2;
+}
+
+.sound::-webkit-slider-runnable-track {
+  height: 5px;
+  background: transparent;
+  border-radius: 9999px;
+}
+
+.spin {
+  animation: spin 6s linear forwards infinite; 
+}
+
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 12px;
+  margin-block: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ffcc, #00ff88);
+  border-radius: 12px;
+  border: 2px solid #1a1a1a;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ffaa, #00dd88);
+}
+
+::-webkit-scrollbar-corner {
+  background: #1a1a1a;
+}
